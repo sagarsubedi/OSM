@@ -1,11 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Header from "../public/components/Navbar/Header";
+
 
 export default function Home() {
   return (
-      <div className="test">
-          <h1>This is the landing page!!</h1>
+      <div className="landing-page">
+        <Header />
       </div>
   )
 }
