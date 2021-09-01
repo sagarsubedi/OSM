@@ -10,7 +10,7 @@ function Navbar() {
                 ))}
             </div>
             {/* adad bg-gradient-to-l from-[#9e15ee] for last item fade-in effect */}
-            <div className="absolute top-0 right-0 h-5 w-1/12" />
+            {/* <div className="absolute top-0 right-0 h-5 w-1/12" /> */}
 
         </nav>
     )

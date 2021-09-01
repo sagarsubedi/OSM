@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
 import Sidebar from '../components/Sidebar/Sidebar';
-
+import Dashboard from '../components/Dashboard/Dashboard';
 
 export default function Home() {
   return (
@@ -12,11 +12,26 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Header />
+        {/* this page as a whole should be float - column */}
+        <div className="flex-col">
+            <div>
+                <Header />
+            </div>
+            
+            <div className="ml-4">
+                <Navbar />
+            </div>
 
-        <Navbar />
+            <div className="grid grid-cols-6 mt-4">
+                {/* Sidebar and any component called from sidebar has to float - row */}
+                <div className="col-span-1"><Sidebar /></div>
+                
 
-        <Sidebar />
+                {/* Render components here based on what option is cliked on Sidebar */}
+                <div className="col-span-5 mt-10"><Dashboard /></div>
+            </div>
+        </div>
+        
 
     </div>
   )

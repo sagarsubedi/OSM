@@ -5,7 +5,6 @@ import logoPng from "../../public/img/logo.png";
 // icon imports
 import{
     HomeIcon,
-    LightningBoltIcon,
     SearchIcon,
     UserIcon
 } from "@heroicons/react/outline";
@@ -19,7 +18,6 @@ export default function Header() {
             <div className="flex flex-grow justify-evenly max-w-2xl">
                 {/* left section will have icons */}
                 <HeaderItem title='HOME' Icon={HomeIcon} />
-                <HeaderItem title='TRENDING' Icon={LightningBoltIcon} />
                 <HeaderItem title='SEARCH' Icon={SearchIcon} />
                 <HeaderItem title='ACCOUNT' Icon={UserIcon} />
             </div>
