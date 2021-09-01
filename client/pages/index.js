@@ -1,10 +1,23 @@
-import Header from "../public/components/Navbar/Header";
+import Head from 'next/head';
+import Header from "../components/Header/Header";
+import Navbar from "../components/Navbar/Navbar";
+import Sidebar from '../components/Sidebar/Sidebar';
 
 
 export default function Home() {
   return (
-      <div className="landing-page">
+    <div>
+        <Head>
+            <title>OSM</title>
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <Header />
-      </div>
+
+        <Navbar />
+
+        <Sidebar />
+
+    </div>
   )
 }
