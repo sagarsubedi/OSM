@@ -9,7 +9,7 @@ function Sidebar() {
             <div className="">
                 <ul>
                     {Object.entries(tools).map(([key, {title, url, icon}]) => (
-                        <SideBarItem title={title} Icon={icon} />
+                        <SideBarItem key={key} title={title} Icon={icon}/>
                     ))}
                 </ul>
 

@@ -3,8 +3,12 @@ import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
 import Sidebar from '../components/Sidebar/Sidebar';
 import Dashboard from '../components/Dashboard/Dashboard';
+import { useState } from 'react';
 
 export default function Home() {
+
+    const [component, setComponent] = useState("dashboard");
+
   return (
     <div>
         <Head>
@@ -28,7 +32,8 @@ export default function Home() {
                 
 
                 {/* Render components here based on what option is cliked on Sidebar */}
-                <div className="col-span-5 mt-10"><Dashboard /></div>
+                {component == "dashboard" && (<div className="col-span-5 mt-10"><Dashboard /></div>)}
+                
             </div>
         </div>
         
