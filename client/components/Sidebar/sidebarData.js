@@ -6,7 +6,8 @@ import {
     UserGroupIcon,
     SpeakerphoneIcon,
     FolderOpenIcon,
-    UserIcon
+    UserIcon,
+    QuestionMarkCircleIcon
 
 } from "@heroicons/react/outline";
 
@@ -32,8 +33,14 @@ export default{
     goToTestQuizzes:{
         title: 'Test and Quizzes',
         url: '#',
-        icon:BookOpenIcon,
+        icon:QuestionMarkCircleIcon,
         component : "testAndQuizzes"
+    },
+    goToGradeBook:{
+        title: 'Gradebook',
+        url: '#',
+        icon:BookOpenIcon,
+        component : "gradebook"
     },
     goToResources:{
         title: 'Resources',

@@ -29,7 +29,7 @@ function Assignments() {
                     <div className="w-full overflow-x-hidden">
                         <table className="w-full">
                             <thead>
-                                <tr className="text-md font-semibold tracking-wide text-center text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
+                                <tr className="text-md font-semibold tracking-wide text-center text-gray-900 bg-blue-400 uppercase border-b border-gray-600">
                                     <th className="px-4 py-5">Title</th>
                                     <th className="px-4 py-5">Status</th>
                                     <th className="px-4 py-5">Open Date</th>
@@ -39,7 +39,7 @@ function Assignments() {
                             <tbody className="bg-white">
 
                             {Object.entries(data).map(([key, {title, status, openDate, dueDate}]) => (
-                                <tr key={key} className="text-black text-center">
+                                <tr key={key} className={`text-black text-center bg-blue-100`}>
                                     <td className="px-4 py-6 border">
                                         {/* change this to a Link later */}
                                         <p className="font-semibold text-black">{title}</p>

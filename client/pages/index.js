@@ -1,10 +1,15 @@
 import Head from 'next/head';
+import { useState } from 'react';
+
+// custom components
 import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
 import Sidebar from '../components/Sidebar/Sidebar';
 import Dashboard from '../components/Dashboard/Dashboard';
 import Assignments from '../components/Assignments/Assignments';
-import { useState } from 'react';
+import Roster from '../components/Roster/Roster';
+
+
 
 export default function Home() {
 
@@ -33,8 +38,9 @@ export default function Home() {
                 
 
                 {/* Render components here based on what option is cliked on Sidebar */}
-                {/* <div className="col-span-5 mt-10"><Dashboard /></div> */}
-                <div className="col-span-5 mt-10"><Assignments /></div>
+                <div className="col-span-5 mt-10"><Dashboard /></div>
+                {/* <div className="col-span-5 mt-10"><Assignments /></div> */}
+                {/* <div className="col-span-5 mt-10"><Roster /></div> */}
                 
             </div>
         </div>
