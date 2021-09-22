@@ -12,12 +12,6 @@ import {
 } from "@heroicons/react/outline";
 
 export default{
-    userIcon:{
-        title: 'Sagar Subedi',
-        url: '#',
-        icon: UserIcon,
-        component : "dashboard"
-    },
     goToHome:{
         title: 'Home',
         url: '#',
