@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { useState } from 'react';
 
 // custom components
 import Header from "../components/Header/Header";
@@ -13,7 +12,6 @@ import Roster from '../components/Roster/Roster';
 
 export default function Home() {
 
-    const [component, setComponent] = useState("dashboard");
 
   return (
     <div>

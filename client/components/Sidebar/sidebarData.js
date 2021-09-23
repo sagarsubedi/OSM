@@ -6,7 +6,6 @@ import {
     UserGroupIcon,
     SpeakerphoneIcon,
     FolderOpenIcon,
-    UserIcon,
     QuestionMarkCircleIcon
 
 } from "@heroicons/react/outline";
