@@ -22,8 +22,7 @@ function getBgColor(status){
 function Assignments() {
 
     return (
-        <div className="">
-
+        <div className="grid place-items-center">
             <section className="container w-10/12">
                 <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
                     <div className="w-full overflow-x-hidden">
@@ -61,7 +60,6 @@ function Assignments() {
                     </div>
                 </div>
             </section>
-
         </div>
     )
 }
