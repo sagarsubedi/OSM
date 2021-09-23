@@ -5,7 +5,7 @@ export default{
         email : 'ssubedi1@walsh.edu',
         role : 'Student',
         year : 'Sophomore',
-        imgUrl : 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Blank&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light', 
+        imgUrl : '', 
     },
     std2:{
         id : 2,
@@ -13,7 +13,7 @@ export default{
         email : 'jdoe@walsh.edu',
         role : 'Student',
         year : 'Sophomore',
-        imgUrl : 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Blank&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light',  
+        imgUrl : '',  
     },
     std3:{
         id : 3,
@@ -21,7 +21,7 @@ export default{
         email : 'std3@walsh.edu',
         role : 'Student',
         year : 'Sophomore', 
-        imgUrl : 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Blank&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light', 
+        imgUrl : '', 
     },
     std4:{
         id : 4,
@@ -29,7 +29,7 @@ export default{
         email : 'ssubedi1@walsh.edu',
         role : 'Student',
         year : 'Sophomore', 
-        imgUrl : 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Blank&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light', 
+        imgUrl : '', 
     },
     std5:{
         id : 5,
@@ -37,7 +37,7 @@ export default{
         email : 'ssubedi1@walsh.edu',
         role : 'Student',
         year : 'Sophomore',
-        imgUrl : 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Blank&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light',  
+        imgUrl : '',  
     },
     std6:{
         id : 6,
@@ -45,7 +45,7 @@ export default{
         email : 'ssubedi1@walsh.edu',
         role : 'Student',
         year : 'Sophomore',
-        imgUrl : 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Blank&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light',  
+        imgUrl : '',  
     },
     std7:{
         id : 7,
@@ -53,7 +53,7 @@ export default{
         email : 'ssubedi1@walsh.edu',
         role : 'Student',
         year : 'Sophomore',
-        imgUrl : 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Blank&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light',  
+        imgUrl : '',  
     },
     std8:{
         id : 8,
@@ -61,7 +61,7 @@ export default{
         email : 'ssubedi1@walsh.edu',
         role : 'Student',
         year : 'Sophomore',
-        imgUrl : 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Blank&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light',  
+        imgUrl : '',  
     },
     std9:{
         id : 9,
@@ -69,7 +69,7 @@ export default{
         email : 'ssubedi1@walsh.edu',
         role : 'Student',
         year : 'Sophomore',
-        imgUrl : 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Blank&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light',  
+        imgUrl : '',  
     },
     std10:{
         id : 10,
@@ -77,7 +77,7 @@ export default{
         email : 'ssubedi1@walsh.edu',
         role : 'Student',
         year : 'Sophomore',
-        imgUrl : 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Blank&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light',  
+        imgUrl : '',  
     },
     std11:{
         id : 11,
@@ -85,7 +85,7 @@ export default{
         email : 'ssubedi1@walsh.edu',
         role : 'Student',
         year : 'Sophomore',
-        imgUrl : 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Blank&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light',  
+        imgUrl : '',  
     },
 
 }

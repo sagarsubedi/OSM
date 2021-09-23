@@ -1,4 +1,6 @@
 import studentDeatils from './rosterData';
+import Image from 'next/image';
+import logoPng from "../../public/img/avatar.png";
 
 function Roster() {
 
@@ -8,10 +10,10 @@ function Roster() {
         <section className="flex flex-wrap gap-x-6 gap-y-12 place-content-evenly">
 
             {Object.entries(studentDeatils).map(([key, {name, email, role, year, imgUrl}]) => (
-                <div className="h-72 rounded-2xl shadow-2xl w-60 transition duration-200 transform hover:scale-105 border border-green-200">
+                <div key={key} className="h-72 rounded-2xl shadow-2xl w-60 transition duration-200 transform hover:scale-105 border border-green-200">
 
                     <div className="rounded-full grid place-content-center">
-                        <img src={imgUrl} width={100} />
+                        <Image src={logoPng} width={110} height={110} />
                     </div>
 
                     <div className="grid grid-cols-3">
