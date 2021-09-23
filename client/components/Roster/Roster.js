@@ -9,7 +9,7 @@ function Roster() {
         <section className="bg-transparent cards">
 
             {/* individual cards go here */}
-            <h1>Cards go here</h1>
+            <h1>This is Roster</h1>
 
 
         </section>
