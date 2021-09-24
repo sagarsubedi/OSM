@@ -9,7 +9,7 @@ function Roster() {
         
         <section className="flex flex-wrap gap-x-6 gap-y-12 place-content-evenly">
 
-            {Object.entries(studentDeatils).map(([key, {name, email, role, year, imgUrl}]) => (
+            {Object.entries(studentDeatils).map(([key, {name, email, role, year}]) => (
                 <div key={key} className="h-72 rounded-2xl shadow-2xl w-60 transition duration-200 transform hover:scale-105 border border-green-200">
 
                     <div className="rounded-full grid place-content-center">
