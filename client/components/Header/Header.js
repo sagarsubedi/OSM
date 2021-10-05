@@ -5,26 +5,26 @@ import logoPng from "../../public/img/logo.png";
 // icon imports
 import{
     HomeIcon,
-    SearchIcon,
-    UserIcon
+    UserIcon,
+    SearchIcon
 } from "@heroicons/react/outline";
-
-
 
 export default function Header() {
     return(
-        <header className="flex flex-col sm:flex-row m-5 justify-between items-center">
+        <header className="flex flex-col sm:flex-row m-5 justify-between items-center mr-12">
             
-            <div className="flex flex-grow justify-evenly max-w-2xl">
+            <div className="flex flex-grow ml-10 max-w-xl justify-evenly">
                 {/* left section will have icons */}
-                <HeaderItem title='HOME' Icon={HomeIcon} />
-                <HeaderItem title='SEARCH' Icon={SearchIcon} />
-                <HeaderItem title='ACCOUNT' Icon={UserIcon} />
+                {/* for now just the home icon. I don't see anything else relevant */}
+                <HeaderItem title='HOME' Icon={HomeIcon} url='/' />
+                <HeaderItem title='Search' Icon={SearchIcon} url='/' />  
+                <HeaderItem title='LOG OUT' Icon={UserIcon} url='/' />  
+                {/* log out has to be a functional click that node will wait in the backend and log user out  */}
             </div>
 
             {/* right will have logo */}
             <Image
-            className="object-contain"
+            className="object-contain "
             src={logoPng}
             width={200}
             height={100}
