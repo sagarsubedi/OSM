@@ -8,8 +8,6 @@ export default function Home() {
 
 
   return (
-    <Layout>
-        <Dashboard />
-    </Layout>
+    <h2>HomePage</h2>
   )
 }

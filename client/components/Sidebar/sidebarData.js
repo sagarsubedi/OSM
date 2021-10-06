@@ -13,7 +13,7 @@ import {
 export default{
     goToHome:{
         title: 'Home',
-        url: '/',
+        url: '/dashboard',
         icon: HomeIcon,
         component : "dashboard"
     },
