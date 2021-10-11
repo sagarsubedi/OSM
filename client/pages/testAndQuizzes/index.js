@@ -8,7 +8,7 @@ import TitleAndCreate from "../../components/TitleAndCreate/TitleAndCreate";
 const index = () => {
     return (
         <Layout>
-            <TitleAndCreate name="Tests And Quizzes" userRole="professor" />
+            <TitleAndCreate name="Tests And Quizzes" userRole="professor" url="/testAndQuizzes/createTAndQ" />
             <TestAndQuizzes />
         </Layout>
     )
