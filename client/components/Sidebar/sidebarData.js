@@ -14,43 +14,43 @@ import {
 export default{
     goToHome:{
         title: 'Home',
-        url: '/dashboard',
+        url: '/courses/1/',
         icon: HomeIcon,
         component : "dashboard"
     },
     goToAsignments:{
         title: 'Assignments',
-        url: '/assignments',
+        url: '/courses/1/assignments',
         icon: AcademicCapIcon,
         component : "assignment"
     },
     goToTestQuizzes:{
         title: 'Test and Quizzes',
-        url: '/testAndQuizzes',
+        url: '/courses/1/testAndQuizzes',
         icon:QuestionMarkCircleIcon,
         component : "testAndQuizzes"
     },
     goToGradeBook:{
         title: 'Gradebook',
-        url: '/gradebook',
+        url: '/courses/1/gradebook',
         icon:BookOpenIcon,
         component : "gradebook"
     },
     goToResources:{
         title: 'Resources',
-        url: '/resources',
+        url: '/courses/1/resources',
         icon: FolderOpenIcon,
         component : "resources"
     },
     goToAnnouncements:{
         title: 'Announcements',
-        url: '/announcements',
+        url: '/courses/1/announcements',
         icon:SpeakerphoneIcon,
         component : "announcements"
     },
     goToRoster:{
         title: 'Roster',
-        url: '/roster',
+        url: '/courses/1/roster',
         icon:UserGroupIcon,
         component : "roster"
     },

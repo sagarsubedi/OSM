@@ -9,7 +9,7 @@ const app = express();
 
 const USER = process.env.USER;
 const PASSWORD = process.env.PASSWORD;
-console.log(USER+ "      "+ PASSWORD);
+
 // express  middlewares
 app.use(express.json({limit:"30mb", extended:true }));
 app.use(express.urlencoded({limit:"30mb", extended:true }));
