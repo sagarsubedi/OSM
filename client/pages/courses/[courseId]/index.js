@@ -1,11 +1,12 @@
-// this will be the dashboard for al
-function index() {
-    return (
-        <div>
-            <h1>This is the courses/index page.</h1>
-            <h1>Will be the dashboard</h1>
-        </div>
-    )
-}
+import Layout from '@components/Layout/Layout';
+import Dashboard from '@components/Dashboard/Dashboard';
 
-export default index;
+
+export default function Home() {
+
+  return (
+    <Layout>
+        <Dashboard />
+    </Layout>
+  )
+}

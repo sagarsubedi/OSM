@@ -1,8 +1,14 @@
-function index() {
+
+import Layout from "@components/Layout/Layout";
+import Assignments from "@components/Assignments/Assignments";
+import TitleAndCreate from "@components/TitleAndCreate/TitleAndCreate";
+
+const index = () => {
     return (
-        <div>
-            <h1>All assignments</h1>
-        </div>
+        <Layout>
+            <TitleAndCreate name="Assignments" userRole="professor" />
+            <Assignments />
+        </Layout>
     )
 }
 

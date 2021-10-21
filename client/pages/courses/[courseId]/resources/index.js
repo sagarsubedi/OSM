@@ -1,9 +1,16 @@
-function index() {
+// resources page
+
+import Layout from "@components/Layout/Layout";
+import Resources from "@components/Resources/Resources";
+import TitleAndCreate from "@components/TitleAndCreate/TitleAndCreate";
+
+const index = () => {
     return (
-        <div>
-            <h1>All resources</h1>
-        </div>
+        <Layout>
+            <TitleAndCreate name="Resources" userRole="professor" />
+            <Resources />
+        </Layout>
     )
 }
 
-export default index;
+export default index

@@ -1,8 +1,16 @@
-function index() {
+// test and quizzes
+
+import Layout from "@components/Layout/Layout";
+import TestAndQuizzes from "@components/TestAndQuizzes/TestAndQuizzes";
+import TitleAndCreate from "@components/TitleAndCreate/TitleAndCreate";
+
+
+const index = () => {
     return (
-        <div>
-            <h1>All tests and quizzes</h1>
-        </div>
+        <Layout>
+            <TitleAndCreate name="Tests And Quizzes" userRole="professor" />
+            <TestAndQuizzes />
+        </Layout>
     )
 }
 

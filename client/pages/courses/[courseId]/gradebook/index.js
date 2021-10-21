@@ -1,8 +1,8 @@
 // gradebook page
 
-import Layout from "../../components/Layout/Layout";
-import Gradebook from "../../components/Gradebook/Gradebook";
-import TitleAndCreate from "../../components/TitleAndCreate/TitleAndCreate";
+import Layout from "@components/Layout/Layout";
+import Gradebook from "@components/Gradebook/Gradebook";
+import TitleAndCreate from "@components/TitleAndCreate/TitleAndCreate";
 
 const index = () => {
     return (

@@ -1,8 +1,15 @@
-function index() {
+// announcement page
+
+import Layout from '@components/Layout/Layout';
+import Announcements from "@components/Announcements/Announcements";
+import TitleAndCreate from "@components/TitleAndCreate/TitleAndCreate";
+
+const index = () => {
     return (
-        <div>
-            <h1>This is all Announcements</h1>
-        </div>
+        <Layout>
+            <TitleAndCreate name="Announcements" userRole="professor" />
+            <Announcements />
+        </Layout>
     )
 }
 

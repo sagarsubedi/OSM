@@ -1,0 +1,12 @@
+// this is so that I don't have to write too long file paths
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@components/*" : ["components/*"],
+            "@pages/*" : ["pages/*"],
+            "@pages/courses/*" : ["pages/courses/*"],
+            "@styles/*" : ["styles/*"]
+        }
+    }
+}
