@@ -1,3 +1,4 @@
+import {} from 'dotenv/config';
 import express from "express";
 // import bodyParser from "body-parser";
 import mongoose from "mongoose";
@@ -6,6 +7,9 @@ import postRoutes from "./routes/posts.js";
 
 const app = express();
 
+const USER = process.env.USER;
+const PASSWORD = process.env.PASSWORD;
+console.log(USER+ "      "+ PASSWORD);
 // express  middlewares
 app.use(express.json({limit:"30mb", extended:true }));
 app.use(express.urlencoded({limit:"30mb", extended:true }));
@@ -23,7 +27,7 @@ app.get("/", (req,res) => {
 
 
 // connect to mongodb and then start the server
-const CONNECTION_URL = "mongodb+srv://root:root@cluster0.ubtk0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const CONNECTION_URL = "mongodb+srv://"+USER+":"+PASSWORD+"@cluster0.ubtk0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, {useNewUrlParser:true, useUnifiedTopology:true})

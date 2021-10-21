@@ -10,6 +10,7 @@ import {
 
 } from "@heroicons/react/outline";
 
+
 export default{
     goToHome:{
         title: 'Home',
