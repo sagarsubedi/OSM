@@ -1,4 +1,4 @@
-export default{
+export default {
     an1:{
         key:1,
         subject: 'No class on Wednesday',

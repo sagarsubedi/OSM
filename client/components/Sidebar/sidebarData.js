@@ -10,47 +10,46 @@ import {
 
 } from "@heroicons/react/outline";
 
-
 export default{
     goToHome:{
         title: 'Home',
-        url: '/courses/1/',
+        url: '/courses/[courseId]/',
         icon: HomeIcon,
         component : "dashboard"
     },
     goToAsignments:{
         title: 'Assignments',
-        url: '/courses/1/assignments',
+        url: '/courses/[courseId]/assignments',
         icon: AcademicCapIcon,
         component : "assignment"
     },
     goToTestQuizzes:{
         title: 'Test and Quizzes',
-        url: '/courses/1/testAndQuizzes',
+        url: '/courses/[courseId]/testAndQuizzes',
         icon:QuestionMarkCircleIcon,
         component : "testAndQuizzes"
     },
     goToGradeBook:{
         title: 'Gradebook',
-        url: '/courses/1/gradebook',
+        url: '/courses/[courseId]/gradebook',
         icon:BookOpenIcon,
         component : "gradebook"
     },
     goToResources:{
         title: 'Resources',
-        url: '/courses/1/resources',
+        url: '/courses/[courseId]/resources',
         icon: FolderOpenIcon,
         component : "resources"
     },
     goToAnnouncements:{
         title: 'Announcements',
-        url: '/courses/1/announcements',
+        url: '/courses/[courseId]/announcements',
         icon:SpeakerphoneIcon,
         component : "announcements"
     },
     goToRoster:{
         title: 'Roster',
-        url: '/courses/1/roster',
+        url: '/courses/[courseId]/roster',
         icon:UserGroupIcon,
         component : "roster"
     },
