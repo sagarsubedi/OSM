@@ -3,8 +3,8 @@ export default{
         id : 1,
         name: 'Sagar Subedi',
         email : 'ssubedi1@walsh.edu',
-        role : 'Student',
-        year : 'Sophomore',
+        role : 'Professor',
+        year: '0000',
         imgUrl : '', 
     },
     std2:{
@@ -19,8 +19,8 @@ export default{
         id : 3,
         name: 'Student 3',
         email : 'std3@walsh.edu',
-        role : 'Student',
-        year : 'Sophomore', 
+        role : 'Professor', 
+        year: '0000',
         imgUrl : '', 
     },
     std4:{
@@ -83,8 +83,8 @@ export default{
         id : 11,
         name: 'Sagar Subedi',
         email : 'ssubedi1@walsh.edu',
-        role : 'Student',
-        year : 'Sophomore',
+        role : 'Professor',
+        year: '0000',
         imgUrl : '',  
     },
 
