@@ -1,21 +1,21 @@
 import data from './gradebookData';
 
 function getTextColor(grade){
-    if(grade === 'A' || grade === 'A-') return 'text-green-600';
-    else if(grade === 'B+' || grade === 'B') return 'text-yellow-600';
-    else if(grade === 'B-' || grade === 'C+') return 'text-blue-600';
-    else if(grade === 'C-' || grade === 'D+') return 'text-purple-600';
-    else if(grade === 'D-' || grade === 'F') return 'text-red-600'
+    if(grade[0] == 'A') return 'text-green-600';
+    else if(grade[0] == 'B') return 'text-yellow-600';
+    else if(grade[0] == 'C') return 'text-blue-600';
+    else if(grade[0] == 'D') return 'text-purple-600';
+    else if(grade[0] == 'E') return 'text-red-600'
     else {return '';}
     
 }
 
 function getBgColor(grade){
-    if(grade === 'A' || grade === 'A-') return 'bg-green-200';
-    else if(grade === 'B+' || grade === 'B') return 'bg-yellow-200';
-    else if(grade === 'B-' || grade === 'C+') return 'bg-blue-200';
-    else if(grade === 'C-' || grade === 'D+') return 'bg-purple-200';
-    else if(grade === 'D-' || grade === 'F') return 'bg-red-200'
+    if(grade[0] == 'A') return 'bg-green-200';
+    else if(grade[0] == 'B') return 'bg-yellow-200';
+    else if(grade[0] == 'C') return 'bg-blue-200';
+    else if(grade[0] == 'D') return 'bg-purple-200';
+    else if(grade[0] == 'E') return 'bg-red-200'
     else {return '';}
     
 }
@@ -44,7 +44,7 @@ function Gradebook() {
                                     </td>
 
                                     <td className="px-4 py-6 text-md border">
-                                        <span className={`px-2 py-1 font-semibold leading-tight ${getTextColor(grade)} ${getBgColor(grade)} rounded-sm`}>{grade}</span>
+                                        <span className={`px-2 py-1 font-semibold leading-tight ${getTextColor(grade)} ${getBgColor(grade)} rounded-xl`}>{grade}</span>
                                     </td>
 
                                     <td className="px-4 py-6 text-md border">{remarks}</td>
