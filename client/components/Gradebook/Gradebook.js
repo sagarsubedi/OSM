@@ -44,7 +44,7 @@ function Gradebook() {
                                     </td>
 
                                     <td className="px-4 py-6 text-md border">
-                                        <span className={`px-2 py-1 font-semibold leading-tight ${getTextColor(grade)} ${getBgColor(grade)} rounded-xl`}>{grade}</span>
+                                        <span className={`px-2 py-1 font-semibold leading-tight ${getTextColor(grade)} ${getBgColor(grade)} rounded-lg`}>{grade}</span>
                                     </td>
 
                                     <td className="px-4 py-6 text-md border">{remarks}</td>

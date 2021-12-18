@@ -40,7 +40,7 @@ function Announcements() {
                                     <td className="px-4 py-6 text-md border">{publishedDate}</td>
 
                                     <td className="px-4 py-6 text-md border">
-                                        <span className={`px-2 py-1 font-semibold leading-tight ${getTextColor(isRead)} ${getBgColor(isRead)} rounded-sm`}>{isRead}</span>
+                                        <span className={`px-2 py-1 font-semibold leading-tight ${getTextColor(isRead)} ${getBgColor(isRead)} rounded-lg`}>{isRead}</span>
                                     </td>
 
 

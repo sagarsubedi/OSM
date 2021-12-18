@@ -44,7 +44,7 @@ function TestAndQuizzes() {
                                     </td>
 
                                     <td className="px-4 py-6 text-md border">
-                                        <span className={`px-2 py-1 font-semibold leading-tight ${getTextColor(status)} ${getBgColor(status)} rounded-sm`}>{status}</span>
+                                        <span className={`px-2 py-1 font-semibold leading-tight ${getTextColor(status)} ${getBgColor(status)} rounded-lg`}>{status}</span>
                                     </td>
 
                                     <td className="px-4 py-6 text-md border">{openDate}</td>
