@@ -16,7 +16,7 @@ export default function Header() {
             <div className="flex flex-grow ml-10 max-w-xl justify-evenly">
                 {/* left section will have icons */}
                 {/* for now just the home icon. I don't see anything else relevant */}
-                <HeaderItem title='HOME' Icon={HomeIcon} url='/dashboard' />
+                <HeaderItem title='HOME' Icon={HomeIcon} url='/courses/1/'/>
                 <HeaderItem title='Search' Icon={SearchIcon} url='/' />  
                 <HeaderItem title='LOG OUT' Icon={UserIcon} url='/' />  
                 {/* log out has to be a functional click that node will wait in the backend and log user out  */}

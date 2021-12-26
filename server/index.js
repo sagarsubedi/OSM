@@ -7,6 +7,7 @@ import postRoutes from "./routes/posts.js";
 
 const app = express();
 
+// use this to connect to mongodb
 const USER = process.env.USER;
 const PASSWORD = process.env.PASSWORD;
 
@@ -16,7 +17,7 @@ app.use(express.urlencoded({limit:"30mb", extended:true }));
 // for some reason enabling this makes the server unresponsive. check back later
 // app.use(cors);
 
-// middlewares for routes
+// middlewares for routes 
 
 // for all post routes. comes from routes/posts.js
 app.use("/posts", postRoutes);
@@ -27,12 +28,12 @@ app.get("/", (req,res) => {
 
 
 // connect to mongodb and then start the server
-const CONNECTION_URL = "mongodb+srv://"+USER+":"+PASSWORD+"@cluster0.ubtk0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const CONNECTION_URL = "mongodb://localhost:27017/dev_OSM";
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, {useNewUrlParser:true, useUnifiedTopology:true})
-    .then(() => app.listen(PORT, () => console.log(`Server running on port ${PORT}`)))
-    .catch((error) => console(error));
+    .then(() => app.listen(PORT, () => console.log(`Server with MongoDB running on port ${PORT}`)))
+    .catch((error) => console.log(error));
 
 
 

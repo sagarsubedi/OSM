@@ -1,10 +1,10 @@
 import data from "./assignmentData";
 
 function getTextColor(status){
-    if(status === 'Not Started') return 'text-red-600';
-    else if(status === 'Started') return 'text-green-600';
-    else if(status === 'Submitted') return 'text-yellow-600';
-    else if(status === 'Returned') return 'text-blue-600';
+    if(status === 'Not Started') return 'text-red-700';
+    else if(status === 'Started') return 'text-green-700';
+    else if(status === 'Submitted') return 'text-yellow-700';
+    else if(status === 'Returned') return 'text-blue-700';
     else {return '';}
     
 }
@@ -45,7 +45,7 @@ function Assignments() {
                                     </td>
 
                                     <td className="px-4 py-6 text-md border">
-                                        <span className={`px-2 py-1 font-semibold leading-tight ${getTextColor(status)} ${getBgColor(status)} rounded-sm`}>{status}</span>
+                                        <span className={`px-2 py-1 font-semibold leading-tight ${getTextColor(status)} ${getBgColor(status)} rounded-xl`}>{status}</span>
                                     </td>
 
                                     <td className="px-4 py-6 text-md border">{openDate}</td>
