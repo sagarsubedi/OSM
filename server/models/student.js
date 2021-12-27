@@ -1,31 +1,29 @@
 // model for a student
 
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
 const studentSchema = mongoose.Schema({
     studentFirstName : {type : String, required: true},
     studentLastName : {type : String, required: true},
     studentEmail : {type : String, required: true},
     studentClass : {type : String},
-    studentGrade : {type : String},
     studentAssignments : [{
-        assignmentId : {type : String},
-        assignmentGrade : {type : String},
-        assignmentStatus : {type : String},
+        assignmentId : {type : Schema.ObjectId, ref: 'Assignments'},
+        assignmentGrade : {type : String, enum : ["A","A-","B+","B","B-","C+","C","C-","D+","D","D-","F"]},
+        assignmentStatus : {type : String, enum : ["Not Started", "Started", "Submitted", "Returned"]},
         assignmentRemarks : {type : String},
-        assignmentCompeletedDate : {type : Date},
+        assignmentCompletedDate : {type : Date},
     }],
     studentTestQuizzes : [{
-        testQuizId : {type : String},
-        testQuizGrade : {type : String},
-        testQuizStatus : {type : String},
+        testQuizId : {type : Schema.ObjectId, ref: 'TestQuizzes'},
+        testQuizGrade : {type : String, enum : ["A","A-","B+","B","B-","C+","C","C-","D+","D","D-","F"]},
+        testQuizStatus : {type : String, enum : ["Not Started", "Submitted", "Returned"]},
         testQuizRemarks : {type : String},
-        testQuizCompleted : {type : Boolean},
         testQuizCompletedDate : {type : Date},
     }],
     studentAnnouncements : [{
-        announcementId : {type : String},
-        announcementStatus : {type : String},
+        announcementId : {type : Schema.ObjectId, ref: 'Announcements'},
+        announcementStatus : {type : String, enum : ["Read", "Not Read"]},
     }],
     // we need a courseId to link the student to a course
 

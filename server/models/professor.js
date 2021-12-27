@@ -7,7 +7,7 @@ const createProfessor = mongoose.Schema({
     professorLastName : {type : String, required: true},
     professorEmail : {type : String, required: true},
     courses : [{
-        courseId : {type : String},
+        courseId : {type : Schema.ObjectId,  ref : 'Courses', required: true},
     }],
 }, { collection: 'Professors' });
 
