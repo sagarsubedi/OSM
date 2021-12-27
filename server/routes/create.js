@@ -2,7 +2,7 @@
 // no logic, just routing
 
 import express from "express";
-import { createAnnouncement, createResource } from "../controllers/create.js";
+import { createAnnouncement, createResource, createAssignment, createTestQuiz, createStudent, createCourse, createProfessor } from "../controllers/create.js";
 
 
 const router = express.Router();
@@ -19,14 +19,18 @@ router.post("/announcement", createAnnouncement);
 router.post("/resource", createResource);
 
 // for creating assignments
-
+router.post("/assignment", createAssignment);
 
 // for creating testAndQuizzes
-
-// for creating courses
-
-// for creating professors
+router.post("/testAndQuiz", createTestQuiz);
 
 // for creating students
+router.post("/student", createStudent);
+
+// for creating courses
+router.post("/course", createCourse);
+
+// for creating professors
+router.post("/professor", createProfessor);
 
 export default router;

@@ -34,6 +34,7 @@ app.get("/", (req,res) => {
 });
 
 // call to routes folder for all create requests
+// except for get routes, all other routes should be protected for professors and admin only
 app.use("/create", createRoutes);
 
 // call to routes folder for all update requests
