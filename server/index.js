@@ -27,7 +27,8 @@ mongoose.connect(CONNECTION_URL, {useNewUrlParser:true, useUnifiedTopology:true}
     .catch((error) => console.log(error));
 
 
-// middlewares for routes 
+// middlewares for routes
+// for the root route 
 app.get("/", (req,res) => {
     res.send("<h1>This is the localhost/ path</h1>");
 });
