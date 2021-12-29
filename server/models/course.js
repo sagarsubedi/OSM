@@ -4,9 +4,9 @@ import mongoose, { Schema } from "mongoose";
 
 const courseSchema = mongoose.Schema({
     courseName : {type : String, required: true},
-    courseDescription : {type : String, required: true},
-    courseStartDate : {type : Date, required: true},
-    courseEndDate : {type : Date, required: true},
+    courseDescription : {type : String},
+    courseStartDate : {type : Date},
+    courseEndDate : {type : Date},
     courseInstructor : {type : String, required: true},
     courseStudents : [{
         studentId : {type : Schema.ObjectId, ref: 'Students'},
