@@ -1,6 +1,6 @@
 // model for course
 
-import mongoose, { Schema } from "mongoose";
+import mongoose from "mongoose";
 
 const courseSchema = mongoose.Schema({
     courseName : {type : String, required: true},
@@ -9,19 +9,19 @@ const courseSchema = mongoose.Schema({
     courseEndDate : {type : Date},
     courseInstructor : {type : String, required: true},
     courseStudents : [{
-        studentId : {type : Schema.ObjectId, ref: 'Students'},
+        studentId : {type : mongoose.ObjectId, ref: 'Students'},
     }],
     courseAssignments : [{
-        assignmentId : {type : Schema.ObjectId, ref: 'Assignments'},
+        assignmentId : {type : mongoose.ObjectId, ref: 'Assignments'},
     }],
     courseTestQuizzes : [{
-        testQuizId : {type : Schema.ObjectId, ref: 'TestQuizzes'},
+        testQuizId : {type : mongoose.ObjectId, ref: 'TestQuizzes'},
     }],
     courseAnnouncements : [{
-        announcementId : {type : Schema.ObjectId, ref: 'Announcements'},
+        announcementId : {type : mongoose.ObjectId, ref: 'Announcements'},
     }],
     courseResources : [{
-        resourceId : {type : Schema.ObjectId, ref: 'Resources'},
+        resourceId : {type : mongoose.ObjectId, ref: 'Resources'},
     }],
 }, { collection: 'Courses' });
 

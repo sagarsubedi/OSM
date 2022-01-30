@@ -1,6 +1,6 @@
 // model for a student
 
-import mongoose, { Schema } from "mongoose";
+import mongoose from "mongoose";
 
 const studentSchema = mongoose.Schema({
     studentFirstName : {type : String, required: true},
@@ -8,21 +8,21 @@ const studentSchema = mongoose.Schema({
     studentEmail : {type : String, required: true},
     studentClass : {type : String},
     studentAssignments : [{
-        assignmentId : {type : Schema.ObjectId, ref: 'Assignments'},
+        assignmentId : {type : mongoose.ObjectId, ref: 'Assignments'},
         assignmentGrade : {type : String, enum : ["A","A-","B+","B","B-","C+","C","C-","D+","D","D-","F"], required : true},
         assignmentStatus : {type : String, enum : ["Not Started", "Started", "Submitted", "Returned"], require : true, default : "Not Started"},
         assignmentRemarks : {type : String},
         assignmentCompletedDate : {type : Date},
     }],
     studentTestQuizzes : [{
-        testQuizId : {type : Schema.ObjectId, ref: 'TestQuizzes'},
+        testQuizId : {type : mongoose.ObjectId, ref: 'TestQuizzes'},
         testQuizGrade : {type : String, enum : ["A","A-","B+","B","B-","C+","C","C-","D+","D","D-","F"], required : true},
         testQuizStatus : {type : String, enum : ["Not Started", "Submitted", "Returned"], required : true, default : "Not Started"},
         testQuizRemarks : {type : String},
         testQuizCompletedDate : {type : Date},
     }],
     studentAnnouncements : [{
-        announcementId : {type : Schema.ObjectId, ref: 'Announcements'},
+        announcementId : {type : mongoose.ObjectId, ref: 'Announcements'},
         announcementStatus : {type : String, enum : ["Read", "Not Read"], required : true, default : "Not Read"},
     }],
     studentNotes: [{
@@ -33,7 +33,7 @@ const studentSchema = mongoose.Schema({
     }],
     // we need a courseId to link the student to a course
     studentCourses : [{
-        courseId : {type : Schema.ObjectId, ref: 'Courses'},
+        courseId : {type : mongoose.ObjectId, ref: 'Courses'},
     }],
 
 }, { collection: 'Students' });
