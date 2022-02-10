@@ -6,7 +6,7 @@ import TitleAndCreate from "@components/TitleAndCreate/TitleAndCreate";
 const index = () => {
     return (
         <Layout>
-            <TitleAndCreate name="Assignments" userRole="professor" />
+            <TitleAndCreate name="Assignments" userRole="professor" url="createAssignment"/>
             <Assignments />
         </Layout>
     )
