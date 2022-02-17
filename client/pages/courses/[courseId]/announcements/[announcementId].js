@@ -2,7 +2,7 @@ import Layout from "@components/Layout/Layout";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-function Announcements() {
+function Announcement() {
 
     const router = useRouter();
 
@@ -33,4 +33,4 @@ function Announcements() {
     )
 }
 
-export default Announcements;
+export default Announcement;
