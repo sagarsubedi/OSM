@@ -1,7 +1,9 @@
+import CreateAssignment from "@components/Create/CreateAssignment";
+
 function createAssignment() {
     return (
         <div>
-            <h1>Create Assignment</h1>
+            <CreateAssignment />
         </div>
     )
 }

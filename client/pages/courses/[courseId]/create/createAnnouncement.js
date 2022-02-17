@@ -1,4 +1,4 @@
-import CreateAnnouncement from "@components/Create/createAnnouncement";
+import CreateAnnouncement from "@components/Create/CreateAnnouncement";
 
 function createAnnouncement() {
     return (

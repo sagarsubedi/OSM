@@ -1,7 +1,9 @@
+import CreateResource from "@components/Create/CreateResource";
+
 function createResource() {
     return (
         <div>
-            <h1>Create Resource</h1>
+            <CreateResource />
         </div>
     )
 }

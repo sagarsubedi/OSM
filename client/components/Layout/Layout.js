@@ -34,7 +34,7 @@ export default function Layout({children}) {
                 
 
                 {/* Render components here based on what option is cliked on Sidebar */}
-                <div className="col-span-5 mt-10">{children}</div>
+                <div className="col-span-5 mt-10 mr-20">{children}</div>
                 
             </div>
         </div>
