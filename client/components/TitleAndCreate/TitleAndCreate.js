@@ -14,7 +14,7 @@ function TitleAndCreate({name, userRole,url}) {
                                 query: {courseId: router.query.courseId}
                             }}
                         >
-                            <a className="bg-transparent hover:bg-blue-500 text-green-400 font-semibold hover:text-white border border-blue-500 hover:border-green-400 rounded-lg px-8 py-3">Create</a></Link>
+                            <button className="bg-transparent hover:bg-blue-500 text-green-400 font-semibold hover:text-white border border-blue-500 hover:border-green-400 rounded-lg px-8 py-3" type="button">Create</button></Link>
                     </div>
                 }
                 <h2 className="text-xl font-semibold tracking-wider text-green-200">{name}</h2>

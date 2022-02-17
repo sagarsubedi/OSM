@@ -5,8 +5,9 @@
         "paths": {
             "@components/*" : ["components/*"],
             "@pages/*" : ["pages/*"],
-            "@pages/courses/*" : ["pages/courses/*"],
-            "@styles/*" : ["styles/*"]
+            "@courses/*" : ["pages/courses/*"],
+            "@styles/*" : ["styles/*"],
+            "@public/*" : ["public/*"],
         }
     }
 }
