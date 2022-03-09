@@ -8,6 +8,7 @@
             "@courses/*" : ["pages/courses/*"],
             "@styles/*" : ["styles/*"],
             "@public/*" : ["public/*"],
+            "@server/*" : ["../server/*"],
         }
     }
 }
