@@ -3,6 +3,7 @@
 import mongoose from "mongoose";
 
 const AssignmentSchema = mongoose.Schema({
+    courseID : { type: mongoose.Schema.Types.ObjectId, ref: 'Course' },
     dateCreated : {type:Date, required:true},
     dateDue : {type: Date, required : true},
     assignmentTitle : {type : String, required: true},
