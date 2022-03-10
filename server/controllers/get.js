@@ -15,3 +15,57 @@ export const getAnnouncements = async (req, res) => {
         res.status(500).json({success : false, error : err.message});
     }
 };
+
+export const getAssignments = async (req, res) => {
+    try{
+        const assignments = await Assignment.find({});
+        res.json(assignments);
+    }catch(err){
+        res.status(500).json({success : false, error : err.message});
+    }
+};
+
+export const getResources = async (req, res) => {
+    try{
+        const resources = await Resource.find({});
+        res.json(resources);
+    }catch(err){
+        res.status(500).json({success : false, error : err.message});
+    }
+};
+
+export const getTestQuizzes = async (req, res) => {
+    try{
+        const testQuizzes = await TestQuiz.find({});
+        res.json(testQuizzes);
+    }catch(err){
+        res.status(500).json({success : false, error : err.message});
+    }
+};
+
+export const getStudents = async (req, res) => {
+    try{
+        const students = await Student.find({});
+        res.json(students);
+    }catch(err){
+        res.status(500).json({success : false, error : err.message});
+    }
+};
+
+export const getProfessors = async (req, res) => {
+    try{
+        const professors = await Professor.find({});
+        res.json(professors);
+    }catch(err){
+        res.status(500).json({success : false, error : err.message});
+    }
+};
+
+export const getCourses = async (req, res) => {
+    try{
+        const courses = await Course.find({});
+        res.json(courses);
+    }catch(err){
+        res.status(500).json({success : false, error : err.message});
+    }
+};
