@@ -4,6 +4,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import createRoutes from "./routes/create.js";
+import getRoutes from "./routes/get.js";
 
 const app = express();
 
@@ -41,7 +42,8 @@ app.use("/create", createRoutes);
 
 // call to routes forlder for all delete requests
 
-// call to routes folder for all read/get requests
+// call to routes folder for all read/get requests\
+app.use("/get", getRoutes);
 
 
 
