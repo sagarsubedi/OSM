@@ -1,7 +1,9 @@
+import CreateQuiz from "@components/Create/createQuiz";
+
 function createTestQuiz() {
     return (
         <div>
-            <h1>Create Test and Quizzes</h1>
+            <CreateQuiz />
         </div>
     )
 }
